@@ -73,7 +73,7 @@ def on_open(ws):
         
         ws.send(json.dumps([linearcmd]))
         ws.close()
-        print("线程终止...")
+        print("websocket close")
 
     _thread.start_new_thread(run, ())
 
